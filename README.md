@@ -1,4 +1,5 @@
 # Init. Database from code or script base
+using hibernate
 
 *from a script base:*
 
