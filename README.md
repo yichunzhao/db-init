@@ -1,7 +1,6 @@
-# Init. Database from code or script base
-using hibernate
+# Init. Database from code or script base using hibernate
 
-*from a script base:*
+*from a script base*
 
 spring.jpa.hibernate.auto-ddl : its value determins if hibernate automatically generates database schema and tables from entities. 
 
@@ -15,12 +14,11 @@ if it finds a real database, like PostgreSQL
 
 spring.jpa.hibernate.auto-ddl=none
 
-Hence, for an embeded database, if using script to generate schema, it needs to the following key-value in the application property file.
+Hence, for an embeded database, if using script to generate schema, putting the following key-value in the `application.properties`
 
 spring.jpa.hibernate.auto-ddl=none
 
-Otherwise, Hibernate will generate schema again, and owerwritting the tables that are generated and populated by the scripts. 
-
+Otherwise, Hibernate generates schema again, and overwritting tables and populated data. 
 
 *from a Hibernate auto and data.sql*
 
