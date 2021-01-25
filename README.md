@@ -12,7 +12,9 @@ spring.jpa.hibernate.auto-ddl=create-drop
 
 if it finds a real database, like PostgreSQL
 
-spring.jpa.hibernate.auto-ddl=none
+
+spring.jpa.hibernate.ddl-auto=none
+
 
 Hence, for an embeded database, if using script to generate schema, putting the following key-value in the `application.properties`
 
